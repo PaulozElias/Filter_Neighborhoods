@@ -1,0 +1,8 @@
+
+
+db.users.find(
+    {"houses.neighborhood": "Uptown"}, 
+    {_id: 0, houses: {$elemMatch: {neighborhood: "Uptown"}}});
+
+
+
